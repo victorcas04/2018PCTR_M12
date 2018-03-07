@@ -1,6 +1,8 @@
 package pg02;
 import java.awt.Image;
 import javax.swing.ImageIcon;
+
+
 //TODO Transform the code to be used safely in a concurrent context.  
 public class Ball {
        //TODO  Find an archive named Ball.png 
@@ -40,6 +42,7 @@ public class Ball {
 		reflect();
 		
 		//TODO Check postcondition
+		postCondition(x, y);
 	}
 
 	private void reflect() {
@@ -83,6 +86,14 @@ public class Ball {
 
 	public Image getImage() {
 		return image;
+	}
+	
+	private synchronized void postCondition (double pos1, double pos2){
+		//pos1(x) entre la coordenada derecha y la izquierda.
+		assert pos1>Board.LEFTBOARD && pos1<Board.RIGHTBOARD;
+		//pos2(y) entre la coodernada superior y la inferior.
+		assert pos2<Board.TOPBOARD && pos2>Board.BOTTOMBOARD;
+		
 	}
 
 }
