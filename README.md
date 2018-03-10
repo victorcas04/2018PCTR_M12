@@ -2,8 +2,7 @@
 P02_Simulación de objetos físicos con comportamientos autónomos
 
 ## Autores: 
-Víctor de Castro Hurtado
-Guillermo Paredes Muga
+Víctor de Castro Hurtado   y   Guillermo Paredes Muga
 
 #### Universidad de Burgos
 #### Programación Concurrente y de Tiempo Real
@@ -12,8 +11,8 @@ Guillermo Paredes Muga
 
  - Objetivos
  - Enunciado
-  .- Repositorio Original
-  .- Enunciado Completo
+ ...- Repositorio Original
+ ...- Enunciado Completo
  - Instrucciones
 
 ### Objetivos:
