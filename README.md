@@ -1,4 +1,4 @@
-# Título:
+## Título:
 
 P02_Simulación de objetos físicos con comportamientos autónomos
 
@@ -10,12 +10,14 @@ Víctor de Castro Hurtado
 Guillermo Paredes Muga
 
 
-#### Universidad de Burgos
+## Asignatura:
 
-#### Programación Concurrente y de Tiempo Real
+Programación Concurrente y de Tiempo Real
+
+Universidad de Burgos
 
 
-### Índice:
+## Índice:
 
  1. Objetivos
  2. Enunciado
@@ -24,7 +26,7 @@ Guillermo Paredes Muga
  3. Instrucciones
 
 
-### 1.- Objetivos:
+## 1.- Objetivos:
 
  - Implementar código concurrente para simular objetos físicos con comportamientos autónomos independientes
 
@@ -39,11 +41,11 @@ Guillermo Paredes Muga
  - Sincronización de métodos modificadores como técnica que garantiza la imposición de diseño de seguridad
 
 
-### 2.- Enunciado:
+## 2.- Enunciado:
 
 Se quiere desarrollar un juego de billar donde cada bola de la mesa tiene un comportamiento independientede las demás. En una primera versión de la aplicación, disponible en:
 
-##### Repositorio Original
+#### Repositorio Original
   https://gist.github.com/clopezno/6b5a192596f0c7e3745f
 
  - Continuar el desarrollo de esta versión implementando la activación y parada del movimientoindependiente de las bolas utilizando hilos de Java. Consultar las etiquetas //TODO disponibles en elcódigo fuente para evolucionar de forma incremental a la nueva versión.
@@ -54,11 +56,11 @@ Se quiere desarrollar un juego de billar donde cada bola de la mesa tiene un com
  
 Nota: El código propuesto tiene objetivos docentes relacionados con programación concurrente acorde a losconocimientos disponibles por alumnos de sexto semestre del Grado de Ingeniería Informática de la UBU.No tiene pretensiones de pasar a explotación, ya que sería más apropiado usar otras clases del API de lainterfaz gráfica de Java que se salen fuera del alcance del objetivo docente buscado.
 
-##### Enunciado completo:
+#### Enunciado completo:
   https://www.dropbox.com/s/aknxwog5sacbeok/01SimulacionObjetosF%C3%ADsicosconComportamaientosAut%C3%B3nomos.pdf?dl=0
 
 
-### 3.- Instrucciones:
+## 3.- Instrucciones:
 
 Pulsar el botón 'Empezar' para que las bolas empiecen a moverse (o continúen haciéndolo si estaban detenidas tras pulsar el botón 'Parar').
 Pulsar el botón 'Parar' para que las bolas se detengan en su posición actual hasta que se pulse otro botón.
