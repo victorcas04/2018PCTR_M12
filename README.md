@@ -62,9 +62,9 @@ Nota: El código propuesto tiene objetivos docentes relacionados con programaci�
 
 ## 3.- Instrucciones:
 
-Pulsar el botón 'Empezar' para que las bolas empiecen a moverse (o continúen haciéndolo si estaban detenidas tras pulsar el botón 'Parar').
-Pulsar el botón 'Parar' para que las bolas se detengan en su posición actual hasta que se pulse otro botón.
-Pulsar el botón 'Reiniciar' para que las bolas se detengan y vuelvan a su posición original.
+ - Pulsar el botón 'Empezar' para que las bolas empiecen a moverse (o continúen haciéndolo si estaban detenidas tras pulsar el botón 'Parar').
+ - Pulsar el botón 'Parar' para que las bolas se detengan en su posición actual hasta que se pulse otro botón.
+ - Pulsar el botón 'Reiniciar' para que las bolas se detengan y vuelvan a su posición original.
 
 IMPORTANTE: tras pulsar el botón 'Empezar', las bolas se irán deteniendo poco a poco, si se quiere darlas más impulso, no se podrá pulsar el botón 'Empezar' directamente, sino que habrá que pulsar el botón 'Parar' y a continuación 'Empezar'.
 Este comportamiento lo realiza para evitar que pulsemos varias veces seguidas al botón 'Empezar' y las bolas adquieran demasiada velocidad.
