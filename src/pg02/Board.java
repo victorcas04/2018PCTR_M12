@@ -44,5 +44,13 @@ public class Board extends JPanel {
 	public void setBalls(Ball[] balls) {
 		aBalls = balls;
 	}
+	
+	public Ball[] getBalls() {
+		return aBalls;
+	}
+	
+	public Ball getBall(int i) {
+		return aBalls[i];
+	}
 
 }

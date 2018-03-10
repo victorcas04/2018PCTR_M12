@@ -2,13 +2,12 @@ package pg02;
 import java.awt.Image;
 import javax.swing.ImageIcon;
 
-
-//TODO Transform the code to be used safely in a concurrent context.  
+// Transform the code to be used safely in a concurrent context.  
 public class Ball {
-       //TODO  Find an archive named Ball.png 
 	private String Ball = "Ball.png"; 
 
 	private double x,y,dx,dy;
+	private final double speed = 5;
 	private double v,fi;
 	private Image image;
 	private final int IMG_TAM_X,IMG_TAM_Y;
@@ -17,14 +16,12 @@ public class Ball {
 		ImageIcon ii = new ImageIcon(this.getClass().getResource(Ball));
 		image = ii.getImage();
 		
-		//TODO Depend of image size
-		IMG_TAM_X = 32;
-		IMG_TAM_Y = 32;
-
+		IMG_TAM_X = ii.getIconWidth();
+		IMG_TAM_Y = ii.getIconHeight();
 		
 		x = Billiards.Width/4-16;
 		y = Billiards.Height/2-16;
-		v = 5;
+		v = speed;
 		fi =  Math.random() * Math.PI * 2;
 	}
 
@@ -36,16 +33,16 @@ public class Ball {
 			dx = 0;
 			dy = 0;
 		}
+		
 		x += dx;   
 		y += dy;
-		
-		//reflect();
-		
-		//TODO Check postcondition
+
 		postCondition(x, y);
+		reflect();
+
 	}
 
-	public synchronized void reflect()  {
+	private void reflect() {
 		if (Math.abs(x + IMG_TAM_X - Board.RIGHTBOARD) <  Math.abs(dx)) {
 			fi = Math.PI - fi;
 		}
@@ -87,13 +84,21 @@ public class Ball {
 	public Image getImage() {
 		return image;
 	}
+
+	public void stopBall() {
+		this.v = 0;
+	}
+	
+	public void restartSpeed() {
+		this.v = speed;
+	}
 	
 	private synchronized void postCondition (double pos1, double pos2){
+		
 		//pos1(x) entre la coordenada derecha y la izquierda.
 		assert pos1>Board.LEFTBOARD && pos1<Board.RIGHTBOARD;
 		//pos2(y) entre la coodernada superior y la inferior.
 		assert pos2<Board.TOPBOARD && pos2>Board.BOTTOMBOARD;
-		
 	}
 
 }
