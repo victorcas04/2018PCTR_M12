@@ -23,7 +23,8 @@ public class Billiards extends JFrame {
 	// TODO update with number of group label. See practice statement.
 	private final int N_BALL = 12 + 3;
 	private Ball[] balls;
-
+	private ArrayList<Movimiento> hilos = new ArrayList<>();
+	
 	public Billiards() {
 
 		board = new Board();
@@ -56,8 +57,11 @@ public class Billiards extends JFrame {
 
 	private void initBalls() {
 		balls = new Ball[N_BALL];
+		Movimiento hilo;
 		for(int i = 0; i < N_BALL; i++) {
 			balls[i] = new Ball();
+			hilo=new Movimiento(balls[i],board);
+			hilos.add(hilo);
 		}
 		this.board.setBalls(balls);
 	}
@@ -66,7 +70,10 @@ public class Billiards extends JFrame {
 		@Override
 		public void actionPerformed(ActionEvent arg0) {
 			// TODO Code is executed when start button is pushed
-
+			for(int i=0;i<N_BALL;i++) {
+				hilos.get(i).start();
+			
+			}
 		}
 	}
 
@@ -74,7 +81,9 @@ public class Billiards extends JFrame {
 		@Override
 		public void actionPerformed(ActionEvent arg0) {
 			// TODO Code is executed when stop button is pushed
-
+			for(int i=0;i<N_BALL;i++) {
+				hilos.get(i).interrupt();
+			}
 		}
 	}
 

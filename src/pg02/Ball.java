@@ -39,13 +39,13 @@ public class Ball {
 		x += dx;   
 		y += dy;
 		
-		reflect();
+		//reflect();
 		
 		//TODO Check postcondition
 		postCondition(x, y);
 	}
 
-	private void reflect() {
+	public synchronized void reflect()  {
 		if (Math.abs(x + IMG_TAM_X - Board.RIGHTBOARD) <  Math.abs(dx)) {
 			fi = Math.PI - fi;
 		}
