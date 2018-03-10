@@ -1,21 +1,30 @@
 # Título:
+
 P02_Simulación de objetos físicos con comportamientos autónomos
 
+
 ## Autores: 
-Víctor de Castro Hurtado   y   Guillermo Paredes Muga
+
+Víctor de Castro Hurtado
+
+Guillermo Paredes Muga
+
 
 #### Universidad de Burgos
+
 #### Programación Concurrente y de Tiempo Real
+
 
 ### Índice:
 
- - Objetivos
- - Enunciado
- ...- Repositorio Original
- ...- Enunciado Completo
- - Instrucciones
+ 1. Objetivos
+ 2. Enunciado
+    - Repositorio Original
+    - Enunciado Completo
+ 3. Instrucciones
 
-### Objetivos:
+
+### 1.- Objetivos:
 
  - Implementar código concurrente para simular objetos físicos con comportamientos autónomos independientes
 
@@ -28,8 +37,9 @@ Víctor de Castro Hurtado   y   Guillermo Paredes Muga
  - Definición y comprobación de invariantes/postcondiciones como técnica que garantiza la imposición de diseño de seguridad
 
  - Sincronización de métodos modificadores como técnica que garantiza la imposición de diseño de seguridad
- 
-### Enunciado:
+
+
+### 2.- Enunciado:
 
 Se quiere desarrollar un juego de billar donde cada bola de la mesa tiene un comportamiento independientede las demás. En una primera versión de la aplicación, disponible en:
 
@@ -46,8 +56,9 @@ Nota: El código propuesto tiene objetivos docentes relacionados con programaci�
 
 ##### Enunciado completo:
   https://www.dropbox.com/s/aknxwog5sacbeok/01SimulacionObjetosF%C3%ADsicosconComportamaientosAut%C3%B3nomos.pdf?dl=0
-  
-### Instrucciones:
+
+
+### 3.- Instrucciones:
 
 Pulsar el botón 'Empezar' para que las bolas empiecen a moverse (o continúen haciéndolo si estaban detenidas tras pulsar el botón 'Parar').
 Pulsar el botón 'Parar' para que las bolas se detengan en su posición actual hasta que se pulse otro botón.
